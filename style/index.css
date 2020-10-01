@@ -1,1 +1,167 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 
+//
+// My CSS Starts Here
+//
+*/
+
+body{
+    margin: auto;
+    width: 100%;
+    background-color: red;
+}
+header{
+    width: 100%;
+    background-color: blueviolet;
+    margin-bottom: 15px;
+}
+header h1{
+    padding: 30px;
+    font-size: 3.5rem;
+}
+header nav{
+    margin: 0px 5%;
+    padding-bottom: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+header nav a{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    max-width: 50%;
+}
+.nav_btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: cyan;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    width: 200px;
+    height: 50px;
+}
+.nav_btn:hover{
+    background-color: paleturquoise;
+}
+#maincontain{
+    margin: 2.5% auto;
+    width:95%;
+    display: inline-block;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.splashbox{
+    border: 1px double black;
+    background-image: url(/ionia_splash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#splash_img{
+    border: 1px double black;
+    width: auto;
+    height: 400px;
+    overflow: hidden;
+}
+#splash_txt{
+    border: 1px double black;
+    width: 600px;
+    height: auto;
+    background-color: royalblue;
+    padding: 0 15px 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+}
+#splash_txt h2{
+    margin: 85px auto 15px 0px;
+    font-size: 2.5rem;
+}
+#splash_txt a{
+    margin: 0px auto 10px 15px;
+}
+.splash_para{
+    font-family: "Verdana";
+    margin-bottom: 15px;
+}
+.thumb_img img{
+    width: 200px;
+    height: 200px;
+}
+.project_thumbs{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.thumb_title{
+    text-align: center;
+}
+footer{
+    margin-top: 20px;;
+    width: 100%;
+    background-color: rebeccapurple;
+    height: 150px;
+}
