@@ -60,10 +60,15 @@ body{
 }
 header{
     width: 100%;
+    background-image: url("/banner_large.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
     background-color: blueviolet;
     margin-bottom: 15px;
 }
 header h1{
+    font-family: 'Permanent Marker', cursive;
     padding: 30px;
     font-size: 3.5rem;
 }
@@ -113,6 +118,7 @@ header nav a{
     width: 95%;
     height: 100%;
     margin: auto;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -120,7 +126,7 @@ header nav a{
 }
 #splash_img{
     border: 1px double black;
-    width: auto;
+    width: 600px;
     height: 400px;
     overflow: hidden;
 }
@@ -147,17 +153,26 @@ header nav a{
     margin-bottom: 15px;
 }
 .thumb_img img{
-    width: 200px;
-    height: 200px;
+    width: 380px;
+    height: 380px;
 }
 .project_thumbs{
+    border: 1px double black;
     margin: auto;
+    width: 95%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-content: space-around;
+}
+.thumb{
+    margin: 35px auto;
+    border: 1px double black;
 }
 .thumb_title{
+    font-size: 1.5rem;
     text-align: center;
+    margin: 5px 0px 15px 0px;
 }
 footer{
     margin-top: 20px;;
