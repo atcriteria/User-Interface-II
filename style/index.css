@@ -52,23 +52,52 @@ table {
 // My CSS Starts Here
 //
 */
-
-body{
-    margin: auto;
-    width: 100%;
-    background-color: red;
-}
-header{
-    width: 100%;
-    background-image: url("/banner_large.png");
+#splash_txt{
+    width: 600px;
+    height: auto;
+    background-image: url("/ionia_splash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
-    background-color: blueviolet;
+    padding: 0 15px 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    box-shadow: 3px 3px 15px black;
+    border-radius: 15px;
+}
+.thumb_img img{
+    filter: blur(1.5px);
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 15px black;
+    transition: .3s;
+}
+.thumb_img img:hover{
+    filter: blur(0px);
+    box-shadow: 5px 5px 15px goldenrod;
+    opacity: 100%;
+}
+body{
+    margin: auto;
+    width: 100%;
+    background-image: url("/Ionia_LoR_Background.webp");
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(186, 107, 74);
+}
+header{
+    width: 100%;
+    background-color: rgba(0,0,0,0);
     margin-bottom: 15px;
 }
 header h1{
     font-family: 'Permanent Marker', cursive;
+    color: #f8deba;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #5a4951;
     padding: 30px;
     font-size: 3.5rem;
 }
@@ -86,20 +115,29 @@ header nav a{
     flex-direction: row;
     justify-items: center;
     align-items: center;
-    max-width: 50%;
+    max-width: 45%;
+    margin: 5px 5px;
 }
 .nav_btn{
     display: inline-block;
     text-decoration: none;
-    background-color: cyan;
+    font-family: 'Nova Flat', cursive;
+    color: #f8deba;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 5px black;
+    background-color: rgba(186, 107, 74, 85%);
     text-align: center;
     vertical-align: middle;
     line-height: 50px;
     width: 200px;
     height: 50px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.35);
+    transition: .5s;
 }
 .nav_btn:hover{
-    background-color: paleturquoise;
+    background-color:rgba(208, 161, 125, 95%);
+    box-shadow: 5px 5px 14px rgba(0,0,0,.55);
 }
 #maincontain{
     margin: 2.5% auto;
@@ -111,10 +149,6 @@ header nav a{
     flex-wrap: wrap;
 }
 .splashbox{
-    border: 1px double black;
-    background-image: url(/ionia_splash.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
     width: 95%;
     height: 100%;
     margin: auto;
@@ -122,42 +156,41 @@ header nav a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 #splash_img{
-    border: 1px double black;
-    width: 600px;
-    height: 400px;
-    overflow: hidden;
-}
-#splash_txt{
-    border: 1px double black;
-    width: 600px;
+    width: auto;
+    min-width: 400px;
     height: auto;
-    background-color: royalblue;
-    padding: 0 15px 0 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
+    margin: 15px 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 3px 3px 15px black;
 }
 #splash_txt h2{
     margin: 85px auto 15px 0px;
+    font-family: 'Nova Flat', cursive;
+    color: #f8deba;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #5a4951;
     font-size: 2.5rem;
 }
 #splash_txt a{
     margin: 0px auto 10px 15px;
 }
 .splash_para{
-    font-family: "Verdana";
+    background-color: rgba(255,255,255,50%);
+    box-shadow: 0px 0px 10px white;
+    padding: 5px;
+    line-height: 24px;
+    font-family: 'Nova Flat', cursive;
     margin-bottom: 15px;
+    border-radius: 15px;
 }
-.thumb_img img{
-    width: 380px;
-    height: 380px;
+.splash_para:hover{
+    background-color: rgba(255,255,255,65%);
 }
 .project_thumbs{
-    border: 1px double black;
     margin: auto;
     width: 95%;
     display: flex;
@@ -167,16 +200,42 @@ header nav a{
 }
 .thumb{
     margin: 35px auto;
-    border: 1px double black;
 }
 .thumb_title{
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    color: #f8deba;
     margin: 5px 0px 15px 0px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #5a4951;
 }
 footer{
-    margin-top: 20px;;
+    margin-top: 20px;
+    background-image: url("/banner_large.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
     width: 100%;
     background-color: rebeccapurple;
     height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+#foot_contain{
+    margin: 0;
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0);
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+.foot_div{
+    margin: 10px 0;
 }
