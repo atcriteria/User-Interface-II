@@ -52,14 +52,14 @@ table {
 // My CSS Starts Here
 //
 */
+
 #splash_txt{
-    width: 600px;
-    height: auto;
+    width: 40%;
     background-image: url("/ionia_splash.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
-    padding: 0 15px 0 15px;
+    padding: 0 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -90,7 +90,7 @@ body{
 }
 header{
     width: 100%;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(255,255,255,.25);
     margin-bottom: 15px;
 }
 header h1{
@@ -98,13 +98,12 @@ header h1{
     color: #f8deba;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #5a4951;
-    padding: 30px;
+    padding: 3%;
     font-size: 3.5rem;
 }
 header nav{
     margin: 0px 5%;
-    padding-bottom: 20px;
-    height: auto;
+    padding-bottom: 2%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -115,7 +114,6 @@ header nav a{
     flex-direction: row;
     justify-items: center;
     align-items: center;
-    max-width: 45%;
     margin: 5px 5px;
 }
 .nav_btn{
@@ -130,8 +128,7 @@ header nav a{
     text-align: center;
     vertical-align: middle;
     line-height: 50px;
-    width: 200px;
-    height: 50px;
+    width: 10%;
     box-shadow: 3px 3px 10px rgba(0,0,0,.35);
     transition: .3s;
 }
@@ -142,15 +139,13 @@ header nav a{
 #maincontain{
     margin: 2.5% auto;
     width:95%;
-    display: inline-block;
     height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 .splashbox{
-    width: 95%;
-    height: 100%;
+    width: 100%;
     margin: auto;
     margin-bottom: 50px;
     display: flex;
@@ -158,17 +153,17 @@ header nav a{
     flex-wrap: wrap;
     justify-content: center;
 }
-#splash_img{
-    width: auto;
-    min-width: 400px;
-    height: auto;
-    margin: 15px 50px;
+.splashimg{
+    background-image: url('/thumbs/thumb_garen_large.png');
+    width: 26%;
+    margin: 0 7%;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 3px 3px 15px black;
 }
+
 #splash_txt h2{
-    margin: 85px auto 15px 0px;
+    margin: 13% auto 5% 0;
     font-family: 'Nova Flat', cursive;
     color: #f8deba;
     -webkit-text-stroke-width: 1.5px;
@@ -176,7 +171,9 @@ header nav a{
     font-size: 2.5rem;
 }
 #splash_txt a{
+    display: inline-block;
     margin: 0px auto 10px 15px;
+    width: 30%;
 }
 .splash_para{
     background-color: rgba(255,255,255,50%);
@@ -229,13 +226,122 @@ footer{
     margin: 0;
     background-image: none;
     background-color: rgba(0, 0, 0, 0);
-    width: 150px;
+    width: 50%;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
 }
 .foot_div{
     margin: 10px 0;
+}
+.foot_div a{
+    width: 100%;
+    padding: 5% 25%;
+    display: inline-block;
+}
+
+/* Media Queries */
+
+/* 800px max-wdith */
+@media(max-width:800px){
+    .splashbox{
+        justify-items: center;
+        align-items: center;
+    }
+    .splashbox .splashimg{
+        background-position: center;
+        width: 30%;
+        height: 230px;
+    }
+    #splash_txt{
+        width: 50%;
+    }
+    #splash_txt .nav_btn{
+        width: 40%;
+        margin-bottom: 7%;
+    }
+    header nav .nav_btn{
+        width: 20%;
+    }
+    .thumb_img img{
+        filter: blur(0px);
+        box-shadow: none;
+    }
+}
+
+/* 500px max-width */
+@media(max-width:500px){
+
+    header{
+        padding: 5% 0;
+    }
+    header h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    header nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header nav .nav_btn{
+        width: 40%;
+    }
+
+    .splashbox .splashimg{
+        width: 100%;
+        height: 350px;
+        margin-bottom: 5%;
+    }
+    #splash_txt a{
+        margin-left: 0
+    };
+    #splash_txt h2{
+        margin: 15px 0;
+        padding: 0;
+        text-align: center;
+    }
+    #splash_txt .nav_btn{
+        margin-bottom: 10%;
+        margin-top: 3%;
+        padding: 0 10%;
+    }
+    #maincontain .splashbox #splash_txt{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    .thumb .thumb_img img{
+        width: 100%;
+        height: 100%;
+    }
+    .thumb{
+        width: 45%;
+        margin: 10px auto;
+    }
+    #foot_contain{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .foot_div{
+        width: 40%;
+    }
+    .foot_div .nav_btn{
+        width: 100%;
+        margin: 10px 0;
+        padding: 0;
+    }
+    .foot_div a{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
 }
