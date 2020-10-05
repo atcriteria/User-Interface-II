@@ -345,3 +345,32 @@ footer{
     }
 
 }
+
+/* 1366 width (laptop */
+@media(max-width:1366px){
+    .splashbox .splashimg{
+        background-position: center;
+    }
+    #maincontain .project_thumbs{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    .thumb{
+        margin: auto 15px;
+    }
+}
+
+/* 1920 width */
+
+@media(max-width:1920px){
+    .splashbox{
+        margin: 3% 0;
+    }
+    .splashbox .splashimg{
+        background-position: center;
+        height: 480px;
+    }
+}
