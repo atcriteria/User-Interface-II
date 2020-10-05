@@ -1,1 +1,376 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 
+//
+// My CSS Starts Here
+//
+*/
+
+#splash_txt{
+    width: 40%;
+    background-image: url("/ionia_splash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    box-shadow: 3px 3px 15px black;
+    border-radius: 15px;
+}
+.thumb_img img{
+    filter: blur(1.5px);
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 15px black;
+    transition: .3s;
+}
+.thumb_img img:hover{
+    filter: blur(0px);
+    box-shadow: 5px 5px 15px goldenrod;
+    opacity: 100%;
+}
+body{
+    margin: auto;
+    width: 100%;
+    background-image: url("/Ionia_LoR_Background.webp");
+    background-size: cover;
+    background-position: center;
+    background-color:#88533b;
+}
+header{
+    width: 100%;
+    background-color: rgba(255,255,255,.25);
+    margin-bottom: 15px;
+}
+header h1{
+    font-family: 'Permanent Marker', cursive;
+    color: #f8deba;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #5a4951;
+    padding: 3%;
+    font-size: 3.5rem;
+}
+header nav{
+    margin: 0px 5%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+header nav a{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    margin: 5px 5px;
+}
+.nav_btn{
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Nova Flat', cursive;
+    color: #f8deba;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 5px black;
+    background-color: rgba(186, 107, 74, 85%);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    width: 10%;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.35);
+    transition: .3s;
+}
+.nav_btn:hover{
+    background-color:rgba(208, 161, 125, 95%);
+    box-shadow: 5px 5px 14px rgba(0,0,0,.55);
+}
+#maincontain{
+    margin: 2.5% auto;
+    width:95%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.splashbox{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.splashimg{
+    background-image: url('/thumbs/thumb_garen_large.png');
+    width: 26%;
+    margin: 0 7%;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 3px 3px 15px black;
+}
+
+#splash_txt h2{
+    margin: 13% auto 5% 0;
+    font-family: 'Nova Flat', cursive;
+    color: #f8deba;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #5a4951;
+    font-size: 2.5rem;
+}
+#splash_txt a{
+    display: inline-block;
+    margin: 0px auto 10px 15px;
+    width: 30%;
+}
+.splash_para{
+    background-color: rgba(255,255,255,50%);
+    box-shadow: 0px 0px 10px white;
+    padding: 5px;
+    line-height: 24px;
+    font-family: 'Nova Flat', cursive;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+.splash_para:hover{
+    background-color: rgba(255,255,255,65%);
+}
+.project_thumbs{
+    margin: auto;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.thumb{
+    margin: 35px auto;
+}
+.thumb_title{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    color: #f8deba;
+    margin: 5px 0px 15px 0px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #5a4951;
+}
+footer{
+    margin-top: 20px;
+    background-image: url("/banner_large.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+    background-color: rebeccapurple;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+#foot_contain{
+    margin: 0;
+    background-image: none;
+    background-color: rgba(0, 0, 0, 0);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+.foot_div{
+    margin: 10px 0;
+}
+.foot_div a{
+    width: 100%;
+    padding: 5% 25%;
+    display: inline-block;
+}
+
+/* Media Queries */
+
+/* 800px max-wdith */
+@media(max-width:800px){
+    .splashbox{
+        justify-items: center;
+        align-items: center;
+    }
+    .splashbox .splashimg{
+        background-position: center;
+        width: 30%;
+        height: 230px;
+    }
+    #splash_txt{
+        width: 50%;
+    }
+    #splash_txt .nav_btn{
+        width: 40%;
+        margin-bottom: 7%;
+    }
+    header nav .nav_btn{
+        width: 20%;
+    }
+    .thumb_img img{
+        filter: blur(0px);
+        box-shadow: none;
+    }
+}
+
+/* 500px max-width */
+@media(max-width:500px){
+
+    header{
+        padding: 5% 0;
+    }
+    header h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    header nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header nav .nav_btn{
+        width: 40%;
+    }
+
+    .splashbox .splashimg{
+        width: 100%;
+        height: 350px;
+        margin-bottom: 5%;
+    }
+    #splash_txt a{
+        margin-left: 0
+    };
+    #splash_txt h2{
+        margin: 15px 0;
+        padding: 0;
+        text-align: center;
+    }
+    #splash_txt .nav_btn{
+        margin-bottom: 10%;
+        margin-top: 3%;
+        padding: 0 10%;
+    }
+    #maincontain .splashbox #splash_txt{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    .thumb .thumb_img img{
+        width: 100%;
+        height: 100%;
+    }
+    .thumb{
+        width: 45%;
+        margin: 10px auto;
+    }
+    #foot_contain{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .foot_div{
+        width: 40%;
+    }
+    .foot_div .nav_btn{
+        width: 100%;
+        margin: 10px 0;
+        padding: 0;
+    }
+    .foot_div a{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+}
+
+/* 1366 width (laptop */
+@media(max-width:1366px){
+    .splashbox .splashimg{
+        background-position: center;
+    }
+    #maincontain .project_thumbs{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    .thumb{
+        margin: auto 15px;
+    }
+}
+
+/* 1920 width */
+
+@media(max-width:1920px){
+    .splashbox{
+        margin: 3% 0;
+    }
+    .splashbox .splashimg{
+        background-position: center;
+        height: 480px;
+    }
+}
